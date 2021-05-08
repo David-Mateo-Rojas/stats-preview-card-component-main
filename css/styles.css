@@ -1,0 +1,153 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #090b1a;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+span {
+  color: #aa5cdb;
+}
+
+img  {
+  height: 100%;
+  mix-blend-mode: multiply;
+  opacity: 0.77;
+}
+
+.big-box {
+  position: absolute;
+  width: 71rem;
+  height: 28.5rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #1b1938;
+  display: flex;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.photo {
+  background-color: #aa5cdb;
+  flex: 50%;
+}
+
+.text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 3em 8em 1em 4.5em;
+}
+
+.tittle {
+  flex: 33.33%;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.14rem;
+}
+
+.little-boxes {
+  color: #FFFFFF99;
+  flex: 33.33%;
+  display: flex;
+}
+
+.box {
+  flex: 33.33%;
+  margin: 2em 0 1em 2.5em;
+}
+
+.one {
+  margin-left: 0;
+}
+
+.paragraph {
+  color: #FFFFFFC0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  flex: 33.33%;
+  line-height: 1.8;
+}
+
+.number {
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+}
+
+.st {
+  font-family: 'Lexend Deca', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 0.5em;
+}
+
+@media only screen and (max-width: 800px) {
+
+  .big-box {
+    height: 43rem;
+    width: 18rem;
+    flex-direction: column-reverse;
+    top: 26rem;
+  }
+
+  .text {
+    flex: 68%;
+    flex-direction: column;
+    padding: 1em 1em 1em 1em;
+    text-align: center;
+  }
+
+  .photo {
+    flex: 32%;
+    max-height: 32%;
+  }
+
+  img {
+    width:100%;
+    height:100%;
+  }
+
+  .little-boxes {
+    flex: 53%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tittle {
+    font-size: 0.78rem;
+  }
+
+  .paragraph {
+    font-size: 0.89rem;
+    line-height: 1.6;
+  }
+
+  .box {
+    margin: 0;
+  }
+  .st {
+    font-size: 0.76rem;
+  }
+
+  .number {
+    font-size: 1.3rem;
+  }
+
+}
